@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Don Acetón — Productos de limpieza profesional al mejor precio. Desengrasantes, aromatizantes, productos para auto y más. Entrega en Montemorelos y alrededores.">
+  <meta name="keywords" content="productos limpieza, desengrasante, aromatizante, Don Acetón, Montemorelos, limpieza profesional">
+  <meta name="theme-color" content="#013672">
+  <title>Don Acetón | Limpieza Profesional</title>
+
+  <!-- Fonts: Barlow Condensed (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       PROMO BANNER
+  ══════════════════════════════════════ -->
+  <div class="promo-banner" id="promoBanner">
+    <div class="promo-inner">
+      <span class="promo-dot"></span>
+      <p>🚚 Envío disponible en Montemorelos y alrededores &nbsp;·&nbsp; <strong>Descuentos por volumen para negocios</strong></p>
+      <button class="promo-close" id="promoClose" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-top">
+      <!-- Logo -->
+      <a href="#inicio" class="nav-logo">
+        <img src="donaceton logo f.png" alt="Don Acetón" class="logo-img">
+      </a>
+
+      <!-- Search -->
+      <div class="search-wrap" id="searchWrap">
+        <div class="search-box">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="searchInput" placeholder="¿Qué producto buscas?" autocomplete="off">
+          <button class="search-clear" id="searchClear" aria-label="Limpiar búsqueda">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="nav-icon-btn search-toggle-btn" id="searchToggleBtn" aria-label="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="tel:+529191437135" class="nav-phone" aria-label="Llamar">
+          <i class="fas fa-phone"></i>
+          <span>919 143 7135</span>
+        </a>
+        <button class="cart-trigger" id="cartBtn" aria-label="Carrito de compras">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" id="cartCount" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Categories bar -->
+    <div class="nav-cats" id="navCats">
+      <div class="cats-scroll">
+        <button class="cat-pill active" data-category="todos">
+          <i class="fas fa-border-all"></i><span>Todos</span>
+        </button>
+        <button class="cat-pill" data-category="casa">
+          <i class="fas fa-house"></i><span>Casa</span>
+        </button>
+        <button class="cat-pill" data-category="aromas">
+          <i class="fas fa-wind"></i><span>Aromas</span>
+        </button>
+        <button class="cat-pill" data-category="carro">
+          <i class="fas fa-car"></i><span>Auto</span>
+        </button>
+        <button class="cat-pill" data-category="cremas">
+          <i class="fas fa-hand-sparkles"></i><span>Cremas</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <img src="DonA.jpg" alt="" class="hero-img-bg" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-body">
+      <div class="hero-tag">
+        <span class="tag-dot"></span> Productos de Alta Eficacia
+      </div>
+      <h1 class="hero-title">
+        Limpieza que<br>
+        <em>Transforma</em>
+      </h1>
+      <p class="hero-desc">Suministro garantizado para hogares, negocios y empresas. Calidad profesional al alcance de todos.</p>
+
+      <div class="hero-ctas">
+        <a href="#productos" class="btn-hero-primary">
+          <i class="fas fa-sparkles"></i> Ver Catálogo
+        </a>
+        <a href="https://wa.me/529191437135?text=Hola,%20quiero%20cotizar%20productos" class="btn-hero-wa" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Cotizar Ahora
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <strong class="stat-num" data-target="22">0</strong>
+          <span>Productos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <strong class="stat-num" data-target="100">0</strong><strong>%</strong>
+          <span>Calidad</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <strong class="stat-num" data-target="5">0</strong>
+          <span>Categorías</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PRODUCTOS
+  ══════════════════════════════════════ -->
+  <main id="productos">
+
+    <div class="section-header reveal">
+      <div class="section-label">Catálogo Completo</div>
+      <h2 class="section-title">Nuestros Productos</h2>
+      <p class="section-desc">Todo lo que necesitas para una limpieza impecable</p>
+    </div>
+
+    <div class="products-toolbar">
+      <div class="toolbar-left">
+        <span class="results-count" id="resultsCount">22 productos</span>
+      </div>
+      <div class="toolbar-right">
+        <select id="sortSelect" class="sort-sel" aria-label="Ordenar productos">
+          <option value="default">Ordenar por</option>
+          <option value="price-low">Precio: Menor a Mayor</option>
+          <option value="price-high">Precio: Mayor a Menor</option>
+          <option value="name">Nombre A–Z</option>
+          <option value="new">Novedades primero</option>
+        </select>
+        <div class="view-toggle">
+          <button class="view-btn active" id="viewGrid" aria-label="Vista cuadrícula"><i class="fas fa-grid-2"></i></button>
+          <button class="view-btn" id="viewList" aria-label="Vista lista"><i class="fas fa-list"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-wrap">
+      <div class="products-grid" id="productsGrid"></div>
+      <div class="no-results hidden" id="noResults">
+        <div class="no-results-icon"><i class="fas fa-search"></i></div>
+        <h3>Sin resultados</h3>
+        <p>Intenta con otros términos</p>
+        <button class="btn-secondary" onclick="clearSearch()">Limpiar búsqueda</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       TRUST BADGES (después del catálogo)
+  ══════════════════════════════════════ -->
+  <section class="trust-section reveal">
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fas fa-truck-fast"></i></div>
+        <div class="trust-text">
+          <strong>Entrega Rápida</strong>
+          <span>Montemorelos y zona</span>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fas fa-medal"></i></div>
+        <div class="trust-text">
+          <strong>Calidad Garantizada</strong>
+          <span>Productos probados</span>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fas fa-tag"></i></div>
+        <div class="trust-text">
+          <strong>Mejores Precios</strong>
+          <span>Precio de distribuidor</span>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fas fa-building"></i></div>
+        <div class="trust-text">
+          <strong>Para Negocios</strong>
+          <span>Descuentos por volumen</span>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fas fa-headset"></i></div>
+        <div class="trust-text">
+          <strong>Asesoría Personal</strong>
+          <span>Te ayudamos a elegir</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       BANNER CTA
+  ══════════════════════════════════════ -->
+  <section class="cta-banner reveal">
+    <div class="cta-content">
+      <div class="cta-icon"><i class="fab fa-whatsapp"></i></div>
+      <div class="cta-text">
+        <h2>¿Necesitas asesoría o un pedido personalizado?</h2>
+        <p>Escríbenos por WhatsApp y te atendemos al momento</p>
+      </div>
+      <a href="https://wa.me/529191437135?text=Hola,%20necesito%20asesoría%20sobre%20sus%20productos" class="btn-cta-wa" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Chatear ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="donaceton logo f.png" alt="Don Acetón" class="footer-logo">
+        <p>Tu proveedor confiable de productos de limpieza profesional en Montemorelos y alrededores.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/529191437135" class="social-btn wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="#" data-category="casa"><i class="fas fa-house"></i> Productos de Casa</a></li>
+          <li><a href="#" data-category="aromas"><i class="fas fa-wind"></i> Aromatizantes</a></li>
+          <li><a href="#" data-category="carro"><i class="fas fa-car"></i> Auto</a></li>
+          <li><a href="#" data-category="cremas"><i class="fas fa-hand-sparkles"></i> Cremas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul class="contact-list">
+          <li><i class="fas fa-phone"></i> <a href="tel:+529191437135">+52 919 143 7135</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/529191437135">WhatsApp</a></li>
+          <li><i class="fas fa-location-dot"></i> Local 13, Puestos de la Carlota</li>
+          <li><i class="fas fa-clock"></i> Lun – Vie: 9:00 AM – 12:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Don Acetón · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       CARRITO SIDEBAR
+  ══════════════════════════════════════ -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" role="dialog">
+    <div class="cart-header">
+      <div class="cart-title">
+        <i class="fas fa-shopping-bag"></i>
+        <h3>Mi Carrito</h3>
+        <span class="cart-items-count" id="cartItemsCount">0 productos</span>
+      </div>
+      <button class="drawer-close" id="closeCart" aria-label="Cerrar carrito">
+        <i class="fas fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty-state" id="cartEmpty">
+        <div class="empty-icon"><i class="fas fa-shopping-bag"></i></div>
+        <h4>Tu carrito está vacío</h4>
+        <p>Agrega productos para comenzar tu pedido</p>
+        <button class="btn-secondary" id="continueShopping">Ver productos</button>
+      </div>
+      <div class="cart-list" id="cartList"></div>
+    </div>
+
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <strong id="cartTotal">$0</strong>
+        </div>
+      </div>
+      <button class="btn-wa-checkout" id="checkoutBtn">
+        <i class="fab fa-whatsapp"></i>
+        <span>Pedir por WhatsApp</span>
+      </button>
+      <button class="btn-clear-cart" id="clearCartBtn">
+        <i class="fas fa-trash"></i> Vaciar carrito
+      </button>
+    </div>
+  </aside>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ══════════════════════════════════════
+       PRODUCT MODAL
+  ══════════════════════════════════════ -->
+  <div class="product-modal" id="productModal" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <div class="modal-layout">
+        <div class="modal-img-side">
+          <div class="modal-img-wrap">
+            <img id="modalImg" src="" alt="" loading="lazy">
+          </div>
+          <div class="modal-badges" id="modalBadges"></div>
+        </div>
+
+        <div class="modal-info-side">
+          <div class="modal-cat-label" id="modalCat"></div>
+          <h2 class="modal-product-name" id="modalTitle"></h2>
+          <p class="modal-subtitle-text" id="modalSubtitle"></p>
+
+          <div class="modal-price-row">
+            <span class="modal-price" id="modalPrice"></span>
+            <span class="modal-size-chip" id="modalSize"></span>
+          </div>
+
+          <p class="modal-desc-text" id="modalDescription"></p>
+
+          <div class="modal-actions">
+            <div class="qty-control">
+              <button class="qty-btn" id="qtyMinus" aria-label="Reducir cantidad">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="number" id="qtyInput" value="1" min="1" max="99" class="qty-field" aria-label="Cantidad">
+              <button class="qty-btn" id="qtyPlus" aria-label="Aumentar cantidad">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="btn-add-cart" id="addToCartBtn">
+              <i class="fas fa-bag-shopping"></i>
+              <span>Agregar al Carrito</span>
+            </button>
+          </div>
+
+          <a href="#" class="btn-modal-wa" id="whatsappDirectBtn" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay"></div>
+
+  <!-- ══════════════════════════════════════
+       FLOATING ELEMENTS
+  ══════════════════════════════════════ -->
+  <a href="https://wa.me/529191437135?text=Hola,%20me%20interesa%20información%20sobre%20sus%20productos"
+     class="wa-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">¿Necesitas ayuda?</span>
+  </a>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toasts" id="toastContainer" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
